@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "spotify-data-cleaner"
+version = "0.1.0"
+description = "Clean personally identifiable information from Spotify account data for safe use in class projects."
+authors = ["MGMT 47800"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.9"
+faker = "^30.0.0"
+jupyter = {version = "^1.0.0", optional = true}
+
+[tool.poetry.extras]
+notebook = ["jupyter"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
